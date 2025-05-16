@@ -552,7 +552,7 @@ section,
   justify-content: center;
 }
 
-.hero img {
+.hero-img {
   position: absolute;
   inset: 0;
   display: block;
@@ -608,13 +608,17 @@ section,
   color: var(--accent-color);
 }
 
+.hero-img.mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
+  .hero-img.desktop {
+    display: none;
   }
 
-  .hero p {
-    font-size: 20px;
+  .hero-img.mobile {
+    display: block;
   }
 }
 
