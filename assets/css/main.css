@@ -12,13 +12,11 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--heading-font: "Lora", serif; /* 'serif' acts as a generic fallback /
+--nav-font: "Inter", sans-serif; / 'sans-serif' acts as a generic fallback */
 }
-.mono-font {
-  font-family: 'Courier New', Courier, monospace;
-}
+
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
@@ -66,7 +64,9 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  font-weight: 400; /* Standard weight for Inter body text */
 }
+
 
 a {
   color: var(--accent-color);
@@ -79,14 +79,9 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--heading-color);
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
+  font-weight: 700; /* Example: A bold weight for Lora headings */
 }
 
 /* PHP Email Form Messages
